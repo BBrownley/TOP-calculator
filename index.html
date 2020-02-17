@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                <div id="memory"></div>
+                <div class="main-container"><span id="main">0</span></div>
+            </div>
+            <div class="buttons">
+                <button id="backspace">
+                    <svg class="backspace__icon">
+                        <use xlink:href="icons/symbol-defs.svg#icon-arrow-left"></use>
+                    </svg>
+                </button>
+                <button id="plus-minus">+/-</button>
+                <button id="clear">C</button>
+                <button class="operator" id="divide" data-sign="/">/</button>
+                <button class="number-button" data-key="7">7</button>
+                <button class="number-button" data-key="8">8</button>
+                <button class="number-button" data-key="9">9</button>
+                <button class="operator" id="multiply" data-sign="x">x</button>
+                <button class="number-button" data-key="4">4</button>
+                <button class="number-button" data-key="5">5</button>
+                <button class="number-button" data-key="6">6</button>
+                <button class="operator" id="subtract" data-sign="-">-</button>
+                <button class="number-button" data-key="1">1</button>
+                <button class="number-button" data-key="2">2</button>
+                <button class="number-button" data-key="3">3</button>
+                <button class="operator" id="add" data-sign="+">+</button>
+                <button class="number-button" data-key="0">0</button>
+                <button id="add-decimal">.</button>
+                <button id="equals-button">=</button>
+            </div>
+        </div>
+    </div>
+    
+    <audio src="./sounds/button.mp3" data-audio="button"></audio>
+    <audio src="./sounds/equalButton.mp3" data-audio="equalButton"></audio>
+    
+</body>
+
+<script src="./script.js"></script>
+
+</html>

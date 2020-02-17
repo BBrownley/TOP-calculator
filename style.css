@@ -1,0 +1,136 @@
+@keyframes slideDownMain1 {
+    from {
+        transform: translateY(-30%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slideDownMain2 {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(30%);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right bottom, #9B5BD3, #F49076);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.calculator {
+    margin-top: 20px;
+    width: 400px;
+    display: inline-block;
+    background-color: black;
+    box-shadow: 1px 1px 5px black;
+}
+
+.display {
+    color: white;
+    background-color: #212121;
+    text-align: right;
+    padding: 1em;
+}
+
+.display #memory {
+    color: #B7717E;
+    font-size: 2em;
+    height: 30px;
+}
+
+.display .main-container {
+    font-size: 5em;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.display #main.small-1 {
+    font-size: 4rem;
+}
+
+.display #main.small-2 {
+    font-size: 3rem;
+}
+
+.display #main.small-3 {
+    font-size: 2rem;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button {
+    flex-basis: 100px;
+    height: 100px;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    border: none;
+    position: relative;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 2px;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translate(-2px, -2px);
+    transition: .1s ease-in-out;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    transform: translate(1px, 1px);
+    transition: .0625s;
+}
+
+.buttons .operator {
+    background-color: #9B5BD3;
+}
+
+.buttons #equals-button {
+    flex: 1;
+    background-color: #E62F89;
+}
+
+#backspace {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#backspace .backspace__icon {
+    height: 30px;
+    width: 30px;
+    fill: black;
+}
